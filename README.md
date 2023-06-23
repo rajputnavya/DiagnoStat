@@ -1,1 +1,1 @@
-# DiagnoStat-Pro
+# DiagnoStat
