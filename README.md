@@ -1,18 +1,48 @@
 # DiagnoStat : Multiple Disease Prediction Web App
 
-Multiple Disease Prediction web app for predicting diseases of Heart, Diabetes and Parkinsons disease based on numerical data.
+- Developed a web application that aims to provide users with accurate and personalized predictions about their health conditions
+by implementing Machine Learning algorithms, deployed using Streamlit cloud. This web app predicts whether a person has
+Heart, Diabetes or Parkinsons disease using data entered by user.
+- Accomplished an average accuracy of 93.83%.
 
-## Dataset :
+### Link of Website Application : https://diagnostat.streamlit.app/
+
+### Dataset :
 - Heart : https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
 - Diabetes : https://www.kaggle.com/datasets/mathchi/diabetes-data-set
 - Parkinsons : https://www.kaggle.com/datasets/thecansin/parkinsons-data-set
 
-## Best Accuracy Scores : 
+### Best Accuracy Scores : 
 - Heart :  0.9707
 - Diabetes : 0.9427
 - Parkinsons : 0.9017
 
-# Domain Knowledge 🧠
+<!-- # Domain Knowledge 🧠 
+## HEART :
+1. Chest Pain Types(4):
+   - **Angina:** Angina is a type of chest pain that occurs when there is reduced blood flow to the heart muscle. Typically triggered by physical activity or emotional stress and tends to improve with rest
+   - **Heart Attack (Myocardial Infarction):** A heart attack is a serious condition that happens when there is a sudden and complete blockage of blood flow to a part of the heart muscle. The chest pain during a heart attack is usually intense, prolonged, and may be accompanied by a feeling of tightness or heaviness. The pain may radiate to the left arm, shoulder, back, jaw, or neck.
+   - **Gastroesophageal Reflux Disease (GERD)** or Acid Reflux: GERD is a digestive disorder where stomach acid flows back into the esophagus, causing irritation and discomfort. The chest pain associated with GERD is often described as a burning sensation in the chest, commonly known as heartburn. It may worsen after eating or lying down.
+   - **Pleurisy:** Pleurisy is the inflammation of the lining around the lungs and chest cavity. It can cause sharp, stabbing chest pain that worsens with breathing or coughing. The pain is usually localized to one side of the chest and can be aggravated by deep breaths.
+
+2. Resting Blood Pressure : refers to the blood pressure measurement taken when a person is in a relaxed and resting state, typically upon admission to the hospital or during routine medical evaluations.
+   - Blood pressure is recorded using two values:
+
+        - **Systolic Blood Pressure:** This is the higher number and represents the pressure in the arteries when the heart contracts and pumps blood out to the rest of the body.
+        - **Diastolic Blood Pressure:** This is the lower number and represents the pressure in the arteries when the heart is at rest and is filling with blood between beats.
+   For example, a normal resting blood pressure reading might be expressed as "120/80 mm Hg," where "120" is the systolic blood pressure and "80" is the diastolic blood pressure.
+
+Here is a general classification of blood pressure categories:
+
+- Normal: Systolic <120 mm Hg and Diastolic <80 mm Hg
+- Elevated: Systolic 120-129 mm Hg and Diastolic <80 mm Hg
+- Hypertension Stage 1: Systolic 130-139 mm Hg or Diastolic 80-89 mm Hg
+- Hypertension Stage 2: Systolic ≥140 mm Hg or Diastolic ≥90 mm Hg
+- Hypertensive Crisis: Systolic >180 mm Hg and/or Diastolic >120 mm Hg
+
+Blood Pressure can vary throughout the day based on activity, stress, and other factors. A single measurement may not always provide a comprehensive assessment of a person's blood pressure status
+
+3. 
 
 ## DIABETES :
 In the context of the Pima Indians Diabetes dataset, it's important to understand the significance of the health-related features and the role they might play in predicting the onset of diabetes. Let's delve deeper into these features:
@@ -33,4 +63,4 @@ In the context of the Pima Indians Diabetes dataset, it's important to understan
 
 10. BMI: This feature is the Body Mass Index (weight in kg/(height in m)^2).
     Like skin thickness, it's a measure of body fat, and high BMI values (overweight or obesity) are associated with an increased risk of diabetes.
-
+-->
