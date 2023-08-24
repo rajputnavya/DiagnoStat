@@ -20,7 +20,7 @@ with st.sidebar:
     
     selected = option_menu('Diagnostat',
                           
-                          ['Diabetes Disease Prediction',
+                          ['Diabetes Prediction',
                            'Heart Disease Prediction',
                            'Parkinsons Disease Prediction'],
                           icons=['activity','heart','person'],
@@ -149,7 +149,7 @@ if (selected == 'Heart Disease Prediction'):
     
 
 # Parkinson's Prediction Page
-if (selected == "Parkinsons Prediction"):
+if (selected == "Parkinsons Disease Prediction"):
     
     # page title
     st.title("Diagnostat : Parkinson's Disease Prediction")
