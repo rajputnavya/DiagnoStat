@@ -13,7 +13,7 @@ Heart, Diabetes or Parkinsons disease using data entered by user.
 - Parkinsons : https://www.kaggle.com/datasets/thecansin/parkinsons-data-set
 
 ### Best Accuracy Scores : 
-- Heart :  0.9707
+- Heart :  0.9853
 - Diabetes : 0.9427
 - Parkinsons : 0.9017
 
