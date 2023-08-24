@@ -44,7 +44,7 @@ if (selected == 'Diabetes Prediction'):
         Glucose = st.text_input('Glucose Level')
     
     with col3:
-        BloodPressure = st.text_input('Blood Pressure value (mm Hg)')
+        BloodPressure = st.text_input('Diastolic Blood Pressure value (mm Hg)')
     
     with col1:
         SkinThickness = st.text_input('Skin Thickness value (mm)')
@@ -59,7 +59,7 @@ if (selected == 'Diabetes Prediction'):
         DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
     
     with col2:
-        Age = st.text_input('Your Age (yrs)')
+        Age = st.text_input('Age (yrs)')
     
     
     # code for Prediction
@@ -157,46 +157,46 @@ if (selected == "Parkinsons Disease Prediction"):
     col1, col2, col3, col4, col5 = st.columns(5)  
     
     with col1:
-        fo = st.text_input('MDVP:Fo(Hz) - Average vocal fundamental frequency')
+        fo = st.text_input('MDVP : Fo(Hz) - Average vocal fundamental frequency')
         
     with col2:
-        fhi = st.text_input('MDVP:Fhi(Hz) - Maximum vocal fundamental frequency')
+        fhi = st.text_input('MDVP : Fhi(Hz) - Maximum vocal fundamental frequency')
         
     with col3:
-        flo = st.text_input('MDVP:Flo(Hz) - Minimum vocal fundamental frequency')
+        flo = st.text_input('MDVP : Flo(Hz) - Minimum vocal fundamental frequency')
         
     with col4:
-        Jitter_percent = st.text_input('MDVP:Jitter(%)')
+        Jitter_percent = st.text_input('MDVP : Jitter(%)')
         
     with col5:
-        Jitter_Abs = st.text_input('MDVP:Jitter(Abs)')
+        Jitter_Abs = st.text_input('MDVP : Jitter(Abs)')
         
     with col1:
-        RAP = st.text_input('MDVP:RAP')
+        RAP = st.text_input('MDVP : RAP')
         
     with col2:
-        PPQ = st.text_input('MDVP:PPQ')
+        PPQ = st.text_input('MDVP : PPQ')
         
     with col3:
-        DDP = st.text_input('Jitter:DDP')
+        DDP = st.text_input('Jitter : DDP')
         
     with col4:
-        Shimmer = st.text_input('MDVP:Shimmer')
+        Shimmer = st.text_input('MDV : Shimmer')
         
     with col5:
-        Shimmer_dB = st.text_input('MDVP:Shimmer(dB)')
+        Shimmer_dB = st.text_input('MDVP : Shimmer(dB)')
         
     with col1:
-        APQ3 = st.text_input('Shimmer:APQ3')
+        APQ3 = st.text_input('Shimmer : APQ3')
         
     with col2:
-        APQ5 = st.text_input('Shimmer:APQ5')
+        APQ5 = st.text_input('Shimmer : APQ5')
         
     with col3:
-        APQ = st.text_input('MDVP:APQ')
+        APQ = st.text_input('MDVP : APQ')
         
     with col4:
-        DDA = st.text_input('Shimmer:DDA')
+        DDA = st.text_input('Shimmer : DDA')
         
     with col5:
         NHR = st.text_input('NHR')
