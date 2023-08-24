@@ -1,5 +1,6 @@
 import pickle
 import streamlit as st
+import pandas as pd
 from streamlit_option_menu import option_menu
 import xgboost
 
@@ -17,11 +18,11 @@ parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Multiple Disease Prediction System',
+    selected = option_menu('Diagnostat',
                           
-                          ['Diabetes Prediction',
+                          ['Diabetes Disease Prediction',
                            'Heart Disease Prediction',
-                           'Parkinsons Prediction'],
+                           'Parkinsons Disease Prediction'],
                           icons=['activity','heart','person'],
                           default_index=0)
     
@@ -30,7 +31,7 @@ with st.sidebar:
 if (selected == 'Diabetes Prediction'):
     
     # page title
-    st.title('Diabetes Prediction using ML')
+    st.title('Diagnostat : Diabetes Prediction')
     
     
     # getting the input data from the user
@@ -43,22 +44,22 @@ if (selected == 'Diabetes Prediction'):
         Glucose = st.text_input('Glucose Level')
     
     with col3:
-        BloodPressure = st.text_input('Blood Pressure value')
+        BloodPressure = st.text_input('Blood Pressure value (mm Hg)')
     
     with col1:
-        SkinThickness = st.text_input('Skin Thickness value')
+        SkinThickness = st.text_input('Skin Thickness value (mm)')
     
     with col2:
         Insulin = st.text_input('Insulin Level')
     
     with col3:
-        BMI = st.text_input('BMI value')
+        BMI = st.text_input('BMI value (Kg/m^2)')
     
     with col1:
         DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
     
     with col2:
-        Age = st.text_input('Age of the Person')
+        Age = st.text_input('Your Age (yrs)')
     
     
     # code for Prediction
@@ -70,9 +71,9 @@ if (selected == 'Diabetes Prediction'):
         diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]])
         
         if (diab_prediction[0] == 1):
-          diab_diagnosis = 'The person is diabetic'
+          diab_diagnosis = 'You have a higher likelihood of developing Diabetes :('
         else:
-          diab_diagnosis = 'The person is not diabetic'
+          diab_diagnosis = 'You have low likelihood of developing Diabetes :)'
         
     st.success(diab_diagnosis)
 
@@ -83,45 +84,45 @@ if (selected == 'Diabetes Prediction'):
 if (selected == 'Heart Disease Prediction'):
     
     # page title
-    st.title('Heart Disease Prediction using ML')
+    st.title('Diagnostat : Heart Disease Prediction')
     
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        age = st.text_input('Age')
+        age = st.text_input('Age (yrs)')
         
     with col2:
-        sex = st.text_input('Sex')
+        sex = st.text_input('Sex (1 = Male, 0 = Female)')
         
     with col3:
-        cp = st.text_input('Chest Pain types')
+        cp = st.text_input('Chest Pain type (Value 0: asymptomatic, Value 1: atypical angina, Value 2: non-anginal pain, Value 3: typical angina)')
         
     with col1:
-        trestbps = st.text_input('Resting Blood Pressure')
+        trestbps = st.text_input('Resting Blood Pressure (mm Hg)')
         
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl')
+        chol = st.text_input('Serum Cholestoral (mg/dl)')
         
     with col3:
-        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
+        fbs = st.text_input('Fasting Blood Sugar (> 120 mg/dl, 1 = true; 0 = false)')
         
     with col1:
-        restecg = st.text_input('Resting Electrocardiographic results')
+        restecg = st.text_input('Resting Electrocardiographic result (Value 0: showing probable or definite left ventricular hypertrophy by Estes criteria, Value 1: normal, Value 2: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV))')
         
     with col2:
         thalach = st.text_input('Maximum Heart Rate achieved')
         
     with col3:
-        exang = st.text_input('Exercise Induced Angina')
+        exang = st.text_input('Exercise Induced Angina (1 = yes; 0 = no)')
         
     with col1:
         oldpeak = st.text_input('ST depression induced by exercise')
         
     with col2:
-        slope = st.text_input('Slope of the peak exercise ST segment')
+        slope = st.text_input('Slope of the peak exercise ST segment (0: downsloping; 1: flat; 2: upsloping)')
         
     with col3:
-        ca = st.text_input('Major vessels colored by flourosopy')
+        ca = st.text_input('Major vessels colored by flourosopy (Values = 0,1,2,3)')
         
     with col1:
         thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
@@ -138,9 +139,9 @@ if (selected == 'Heart Disease Prediction'):
         heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg,thalach,exang,oldpeak,slope,ca,thal]])                          
         
         if (heart_prediction[0] == 1):
-          heart_diagnosis = 'The person is having heart disease'
+          heart_diagnosis = 'You have an increased risk of developing heart disease :('
         else:
-          heart_diagnosis = 'The person does not have any heart disease'
+          heart_diagnosis = 'You have a decreased risk of developing heart disease :)'
         
     st.success(heart_diagnosis)
         
@@ -151,18 +152,18 @@ if (selected == 'Heart Disease Prediction'):
 if (selected == "Parkinsons Prediction"):
     
     # page title
-    st.title("Parkinson's Disease Prediction using ML")
+    st.title("Diagnostat : Parkinson's Disease Prediction")
     
     col1, col2, col3, col4, col5 = st.columns(5)  
     
     with col1:
-        fo = st.text_input('MDVP:Fo(Hz)')
+        fo = st.text_input('MDVP:Fo(Hz) - Average vocal fundamental frequency')
         
     with col2:
-        fhi = st.text_input('MDVP:Fhi(Hz)')
+        fhi = st.text_input('MDVP:Fhi(Hz) - Maximum vocal fundamental frequency')
         
     with col3:
-        flo = st.text_input('MDVP:Flo(Hz)')
+        flo = st.text_input('MDVP:Flo(Hz) - Minimum vocal fundamental frequency')
         
     with col4:
         Jitter_percent = st.text_input('MDVP:Jitter(%)')
@@ -231,9 +232,9 @@ if (selected == "Parkinsons Prediction"):
         parkinsons_prediction = parkinsons_model.predict([[fo, fhi, flo, Jitter_percent, Jitter_Abs, RAP, PPQ,DDP,Shimmer,Shimmer_dB,APQ3,APQ5,APQ,DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])                          
         
         if (parkinsons_prediction[0] == 1):
-          parkinsons_diagnosis = "The person has Parkinson's disease"
+          parkinsons_diagnosis = "You have an elevated chance of having Parkinson's disease :("
         else:
-          parkinsons_diagnosis = "The person does not have Parkinson's disease"
+          parkinsons_diagnosis = "You have a lower chance of having Parkinson's disease :)"
         
     st.success(parkinsons_diagnosis)
 
