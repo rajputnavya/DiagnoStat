@@ -5,8 +5,6 @@ by implementing Machine Learning algorithms, deployed using Streamlit cloud. Thi
 Heart, Diabetes or Parkinsons disease using data entered by user.
 - Accomplished an average accuracy of 93.83%.
 
-### Link of Website Application : https://diagnostat.streamlit.app/
-
 ### Dataset :
 - Heart : https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
 - Diabetes : https://www.kaggle.com/datasets/mathchi/diabetes-data-set
@@ -17,7 +15,7 @@ Heart, Diabetes or Parkinsons disease using data entered by user.
 - Diabetes : 0.9427
 - Parkinsons : 0.9017
 
-<!-- # Domain Knowledge 🧠 
+# Domain Knowledge 🧠 
 ## HEART :
 1. Chest Pain Types(4):
    - **Angina:** Angina is a type of chest pain that occurs when there is reduced blood flow to the heart muscle. Typically triggered by physical activity or emotional stress and tends to improve with rest
@@ -63,4 +61,3 @@ In the context of the Pima Indians Diabetes dataset, it's important to understan
 
 10. BMI: This feature is the Body Mass Index (weight in kg/(height in m)^2).
     Like skin thickness, it's a measure of body fat, and high BMI values (overweight or obesity) are associated with an increased risk of diabetes.
--->
