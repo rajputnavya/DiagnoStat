@@ -55,10 +55,11 @@ In the context of the Pima Indians Diabetes dataset, it's important to understan
 
 6. SkinThickness: This refers to the triceps skin fold thickness (in mm).
    It's a measure of body fat, and higher values may indicate overweight or obesity, which are known risk factors for diabetes.
--->
 
 8. Insulin: This is the 2-Hour serum insulin (in mu U/ml).
    Insulin is a hormone that regulates blood sugar, and problems with insulin production or function can lead to the development of diabetes.
 
 10. BMI: This feature is the Body Mass Index (weight in kg/(height in m)^2).
     Like skin thickness, it's a measure of body fat, and high BMI values (overweight or obesity) are associated with an increased risk of diabetes.
+
+-->
