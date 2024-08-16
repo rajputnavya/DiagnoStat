@@ -15,7 +15,7 @@ Heart, Diabetes or Parkinsons disease using data entered by user.
 - Diabetes : 0.9427
 - Parkinsons : 0.9017
 
-# Domain Knowledge 🧠 
+<-- # Domain Knowledge 🧠 
 ## HEART :
 1. Chest Pain Types(4):
    - **Angina:** Angina is a type of chest pain that occurs when there is reduced blood flow to the heart muscle. Typically triggered by physical activity or emotional stress and tends to improve with rest
@@ -40,8 +40,6 @@ Here is a general classification of blood pressure categories:
 
 Blood Pressure can vary throughout the day based on activity, stress, and other factors. A single measurement may not always provide a comprehensive assessment of a person's blood pressure status
 
-3. 
-
 ## DIABETES :
 In the context of the Pima Indians Diabetes dataset, it's important to understand the significance of the health-related features and the role they might play in predicting the onset of diabetes. Let's delve deeper into these features:
 
@@ -55,6 +53,7 @@ In the context of the Pima Indians Diabetes dataset, it's important to understan
 
 6. SkinThickness: This refers to the triceps skin fold thickness (in mm).
    It's a measure of body fat, and higher values may indicate overweight or obesity, which are known risk factors for diabetes.
+-->
 
 8. Insulin: This is the 2-Hour serum insulin (in mu U/ml).
    Insulin is a hormone that regulates blood sugar, and problems with insulin production or function can lead to the development of diabetes.
