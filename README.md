@@ -1,6 +1,6 @@
 # DiagnoStat : Multiple Disease Prediction Web App
 
-- Developed a web application that aims to provide users with accurate and personalized predictions about their health conditions
+- A web application that aims to provide users with accurate and personalized predictions about their health conditions
 by implementing Machine Learning algorithms, deployed using Streamlit cloud. This web app predicts whether a person has
 Heart, Diabetes or Parkinsons disease using data entered by user.
 - Accomplished an average accuracy of 93.83%.
