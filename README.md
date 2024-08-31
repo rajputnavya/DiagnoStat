@@ -14,7 +14,11 @@ Heart, Diabetes or Parkinsons disease using data entered by user.
 - Heart :  0.9853
 - Diabetes : 0.9427
 - Parkinsons : 0.9017
-
+  
+### Website Preview :
+<img width="1433" alt="Screenshot 2024-08-16 at 8 46 43 PM" src="https://github.com/user-attachments/assets/5d21efd8-7823-4e16-83dd-669748375dc7">
+<img width="1438" alt="Screenshot 2024-08-16 at 8 53 50 PM" src="https://github.com/user-attachments/assets/2826e9ec-2ddf-4203-9edc-8727458effc8">
+<img width="1440" alt="Screenshot 2024-08-16 at 8 56 06 PM" src="https://github.com/user-attachments/assets/8fb5f2ee-4c44-4aa7-819a-c41d98d9ddba">
 
 
 <!-- # Domain Knowledge 🧠 
